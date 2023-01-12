@@ -196,7 +196,7 @@ const Sidebar = ({
                 </List>
               </Box>
     
-              {/* <Box position="absolute" bottom="2rem">
+              <Box position="absolute" bottom="2rem">
                 <Divider />
                 <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
                   <Box
@@ -230,7 +230,7 @@ const Sidebar = ({
                     }}
                   />
                 </FlexBetween>
-              </Box> */}
+              </Box>
             </Drawer>
           )}
         </Box>
