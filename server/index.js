@@ -9,13 +9,13 @@ import clientRoutes from "./routes/client.js";
 import generalRoutes from "./routes/general.js";
 import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
-
+import OverallStat from './models/OverallStat.js';
 // data import
 import User from "./models/User.js";
 import Product from "./models/Product.js";
 import ProductStat from './models/ProductStat.js';
 import Transaction from './models/Transaction.js';
-import { dataUser, dataProduct, dataProductStat, dataTransaction } from "./data/index.js";
+import { dataUser, dataProduct, dataProductStat, dataTransaction, dataOverallStat} from "./data/index.js";
 
 // CONFIGURATION
 dotenv.config();
@@ -46,7 +46,8 @@ mongoose.connect(process.env.MONGO_URL, {
     
     // only add data one time
     // Product.insertMany(dataProduct);
-    // Product.insertMany(dataProductStat);
+    // ProductStat.insertMany(dataProductStat);
     // User.insertMany(dataUser);
     // Transaction.insertMany(dataTransaction);
+    // OverallStat.insertMany(dataOverallStat);
 }).catch((error) => console.log(`${error} did not connect`));
